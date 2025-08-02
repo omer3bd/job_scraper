@@ -9,4 +9,4 @@ Give it keywords and it will search the websites for you in seconds! note that t
 after each keyword search.
 
 Enter your keyword list like that and run the code
-![](./Screenshot00.png)
+![](images/Screenshot00.png)
