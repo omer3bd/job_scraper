@@ -12,11 +12,6 @@ scrape jobs from the list and look for data analyst
 class SraperBot:
     def __init__(self):
 
-        # if self.response.status_code == 200:
-        #     html_content = self.response.text
-        # else:
-        #     print("Failed to retrieve the webpage")
-
         self.today = date.today()
         self.file_name = f"hyd_data_jobs_{self.today}.csv"
 
@@ -188,14 +183,10 @@ class SraperBot:
         else:
             print("# deloitte: no matching jobs found")
 
-        # Save to Excel file
-        # if not os.path.exists(self.file_name):
-        #     df.to_csv(self.file_name, index=False)
-
         print(f"Excel file created deloitte {self.today}")
 
     def run(self):
-        keywords = ['it']
+        keywords = ['data analyst', 'associate analyst']    # ENTER TEXTS HERE
         for i in list(keywords):
             self.deloitte(i)
             time.sleep(3)  # sleeps for 3 seconds
